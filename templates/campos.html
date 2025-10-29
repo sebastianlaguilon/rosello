@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<h2>Agregar Campo</h2>
+<form method="POST">
+    <select name="productor_id">
+        {% for p in productores %}
+        <option value="{{ p[0] }}">{{ p[1] }}</option>
+        {% endfor %}
+    </select><br>
+    <input type="text" name="campo" placeholder="Nombre del campo"><br>
+    <input type="text" name="localidad" placeholder="Localidad"><br>
+    <button type="submit">Guardar campo</button>
+</form>
+
+<h3>Campos existentes</h3>
+<ul>
+    {% for c in campos %}
+    <li>{{ c[3] }} → {{ c[1] }} ({{ c[2] }})</li>
+    {% endfor %}
+</ul>
+{% endblock %}

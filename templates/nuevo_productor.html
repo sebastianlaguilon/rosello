@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<h2>Nuevo Productor</h2>
+<form method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="text" name="telefono" placeholder="Teléfono">
+    <input type="text" name="localidad" placeholder="Localidad">
+    <input type="text" name="cuit" placeholder="CUIT">
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}

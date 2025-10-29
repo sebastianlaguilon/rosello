@@ -1,0 +1,8 @@
+﻿__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+.env
+init_db_url.py
+init_db_url_in_db.py

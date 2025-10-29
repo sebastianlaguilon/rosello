@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<h2>Agregar Lote</h2>
+<form method="POST">
+    <label>Campo:</label>
+    <select name="campo_id">
+        {% for c in campos %}
+        <option value="{{ c[0] }}">{{ c[2] }} → {{ c[1] }}</option>
+        {% endfor %}
+    </select><br>
+
+    <input type="text" name="nombre" placeholder="Nombre del lote"><br>
+    <input type="number" step="0.01" name="superficie" placeholder="Superficie (ha)"><br>
+    <button type="submit">Guardar lote</button>
+</form>
+
+<h3>Lotes existentes</h3>
+<ul>
+    {% for l in lotes %}
+    <li>{{ l[3] }} → {{ l[2] }} → Lote {{ l[0] }} ({{ l[1] }} ha)</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,16 @@
+1 PARA ENTRAR EN MODO MYSQL  .....   mysql -u root
+2 PARA SELECCIONAR UNA BASE DE DATOS ..... USE fumigadora_rosello;
+3 MOSTRAR LAS TABLAS ....... SHOW TABLES;
+4 VER LA ESTRUCTURA DE UNA TABLA ...... DESCRIBE productores;
+5 O VER LA ESTRUCTURA DE UNA TABLA ......  SHOW COLUMNS FROM ordenes;
+6 INSERTAR PRODUCTORES DE PRUEBA ....... 
+
+INSERT INTO productores (nombre, cuit, localidad) VALUES
+('Productor A', '20-12345678-9', 'Necochea'),
+('Productor B', '27-87654321-0', 'San Cayetano'),
+('Productor C', '23-11223344-5', 'Lobería');
+
+
+
+
+

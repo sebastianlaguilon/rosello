@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<h2 class="titulo">Menú principal</h2>
+<div class="menu-grid">
+    <a href="/productores" class="menu-btn">👤 Ver Productores</a>
+    <a href="/productores/nuevo" class="menu-btn">➕ Nuevo Productor</a>
+    <a href="/campos" class="menu-btn">🌾 Campos y Lotes</a>
+    <a href="/lotes/nuevo" class="menu-btn">📌 Agregar Lote</a>
+    <a href="/nueva_orden" class="menu-btn">📝 Nueva OT</a>
+    <a href="/ordenes" class="menu-btn">📋 Ver Órdenes</a>
+    <a href="/facturacion" class="menu-btn">💰 Facturación</a>
+</div>
+{% endblock %}

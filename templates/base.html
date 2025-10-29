@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}">
+    <meta name="theme-color" content="#2c3e50">
+    <meta charset="UTF-8">
+    <title>Fumigadora Rosello</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icono.png') }}">
+
+</head>
+<body>
+    
+  <header>
+    <h1>Fumigadora Rosello</h1>
+  </header>
+  <main>
+    {% block contenido %}{% endblock %}
+  </main>
+<
+
+</body>
+</html>
